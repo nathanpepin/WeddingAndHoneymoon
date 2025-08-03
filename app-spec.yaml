@@ -1,22 +1,30 @@
-name: wedding-honeymoon-gallery
-region: nyc3
-
+alerts:
+- rule: DEPLOYMENT_FAILED
+- rule: DOMAIN_FAILED
+envs:
+- key: VITE_USE_CDN
+  scope: RUN_AND_BUILD_TIME
+  value: "true"
+- key: VITE_CDN_BASE_URL
+  scope: RUN_AND_BUILD_TIME
+  value: "https://laura-nathan-wedding-photos.nyc3.digitaloceanspaces.com"
+- key: VITE_APP_TITLE
+  scope: RUN_AND_BUILD_TIME
+  value: "Wedding & Honeymoon Gallery"
+- key: VITE_BASE_PATH
+  scope: RUN_AND_BUILD_TIME
+  value: "/"
+features:
+- buildpack-stack=ubuntu-22
+name: wedding-site
+region: nyc
 static_sites:
-- name: web
-  source_dir: /
+- build_command: npm run build
+  environment_slug: node-js
   github:
-    repo: nathanpepin/WeddingAndHoneymoon
     branch: master
     deploy_on_push: true
-  build_command: npm run build
+    repo: nathanpepin/WeddingAndHoneymoon
+  name: weddingandhoneymoon
   output_dir: dist
-  environment_slug: node-js
-  envs:
-  - key: VITE_USE_CDN
-    value: "true"
-  - key: VITE_CDN_BASE_URL
-    value: "https://laura-nathan-wedding-photos.nyc3.digitaloceanspaces.com"
-  - key: VITE_APP_TITLE
-    value: "Wedding & Honeymoon Gallery"
-  - key: VITE_BASE_PATH
-    value: "/"
+  source_dir: /
