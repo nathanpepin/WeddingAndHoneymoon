@@ -11,6 +11,12 @@ dist/
 build/
 *.local
 
+# Large media files - stored in DigitalOcean Spaces instead
+public/Pictures-Optimized/
+
+# Docker
+.dockerignore
+
 # Environment variables
 .env
 .env.local

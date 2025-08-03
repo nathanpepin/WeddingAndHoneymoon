@@ -1,10 +1,12 @@
 // Utility functions for handling media files
+import { getMediaUrl, getThumbnailUrl } from './cdnUtils.js';
+
 export const getMediaPath = (dayKey, filename, subfolderName = null) => {
-  const basePath = '/Pictures-Optimized';
+  // Use CDN-aware URL generation
   if (subfolderName) {
-    return `${basePath}/${dayKey}/${subfolderName}/${filename}`;
+    return getMediaUrl(`${dayKey}/${subfolderName}`, filename);
   }
-  return `${basePath}/${dayKey}/${filename}`;
+  return getMediaUrl(dayKey, filename);
 };
 
 export const isImageFile = (filename) => {
@@ -45,7 +47,11 @@ export const getDisplayPath = (dayKey, filename, subfolderName = null) => {
     }
   }
   
-  return getMediaPath(dayKey, displayFilename, subfolderName);
+  // Use CDN-aware URL generation
+  if (subfolderName) {
+    return getMediaUrl(`${dayKey}/${subfolderName}`, displayFilename);
+  }
+  return getMediaUrl(dayKey, displayFilename);
 };
 
 // Get alternative video path (for fallback)

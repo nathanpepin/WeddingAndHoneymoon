@@ -1,0 +1,77 @@
+# DigitalOcean Container Registry deployment commands
+# UPDATED: Minimal approach WITHOUT media files in Docker image (52.8MB vs 10.6GB)
+
+# ISSUE ENCOUNTERED: Quota exceeded on Starter tier (524MB limit)
+# SOLUTION: Use minimal image + external media storage OR upgrade to Basic tier ($5/month)
+
+# 1. Install doctl CLI
+# Download from: https://github.com/digitalocean/doctl/releases
+# Extract and add to PATH
+
+# 2. Authenticate with DigitalOcean
+doctl auth init
+# Enter your DigitalOcean API token when prompted
+
+# 3. Log in to the registry
+doctl registry login
+
+# 4. Clean up quota (if needed)
+doctl registry garbage-collection start --include-untagged-manifests
+
+# 5. Build MINIMAL Docker image (excludes media files - only 52.8MB)
+docker build -f Dockerfile.minimal -t wedding-honeymoon-minimal .
+
+# 6. Tag the minimal image for your registry
+docker tag wedding-honeymoon-minimal registry.digitalocean.com/apex-workout/wedding-honeymoon-minimal:latest
+
+# 7. Push minimal image to DigitalOcean Container Registry (much faster!)
+docker push registry.digitalocean.com/apex-workout/wedding-honeymoon-minimal:latest
+
+# 8. Deploy to App Platform
+# Option A: Via Web Interface  
+# - Go to: https://cloud.digitalocean.com/apps
+# - Create App → Container Registry
+# - Select: apex-workout/wedding-honeymoon-minimal:latest
+# - Configure:
+#   - Container Port: 80
+#   - HTTP Routes: /
+#   - Instance Size: Basic ($5/month)
+
+# Option B: Via Command Line (update docker-app-spec.yaml first)
+# doctl apps create docker-app-spec.yaml
+
+# 9. Upload media files separately to DigitalOcean Spaces (object storage)
+# - Create a Space: https://cloud.digitalocean.com/spaces
+# - Upload Pictures-Optimized folder
+# - Update app to serve media from Spaces CDN
+
+# TROUBLESHOOTING:
+# - If quota exceeded: Wait for garbage collection or upgrade to Basic tier
+# - Check status: doctl registry garbage-collection list
+# - Upgrade tier: https://cloud.digitalocean.com/account/billing (Basic = $5/month, 5.37GB storage)
+
+# CURRENT STATUS: Ready to deploy!
+# 1. ✅ Minimal Docker image built with CDN support
+# 2. ⏳ Need to upload media to DigitalOcean Spaces
+# 3. ⏳ Push image to registry and deploy
+
+# NEXT STEPS:
+
+# STEP 1: Create DigitalOcean Space for media files
+# - Go to: https://cloud.digitalocean.com/spaces
+# - Create Space named: wedding-honeymoon-media
+# - Enable CDN: YES
+# - Upload your Pictures-Optimized folder
+# - Cost: $5/month for 250GB + CDN
+
+# STEP 2: Try pushing minimal image again
+docker tag wedding-honeymoon-minimal registry.digitalocean.com/apex-workout/wedding-honeymoon-minimal:latest
+docker push registry.digitalocean.com/apex-workout/wedding-honeymoon-minimal:latest
+
+# STEP 3: Deploy to App Platform
+# - Go to: https://cloud.digitalocean.com/apps
+# - Create App → Container Registry → apex-workout/wedding-honeymoon-minimal:latest
+# - Container Port: 80, Instance Size: Basic ($5/month)
+
+# Total cost: $10/month (Spaces $5 + App Platform $5)
+# The app will serve from CDN for lightning-fast global delivery!

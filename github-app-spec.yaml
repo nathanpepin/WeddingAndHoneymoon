@@ -1,0 +1,20 @@
+name: wedding-honeymoon-gallery
+static_sites:
+- name: web
+  source_dir: /
+  github:
+    repo: nathanpepin/WeddingAndHoneymoon
+    branch: master
+    deploy_on_push: true
+  build_command: npm run build
+  output_dir: /dist
+  environment_slug: node-js
+  env:
+  - key: VITE_USE_CDN
+    value: "true"
+  - key: VITE_CDN_BASE_URL
+    value: "https://wedding-honeymoon-media.nyc3.cdn.digitaloceanspaces.com"
+  - key: VITE_APP_TITLE
+    value: "Wedding & Honeymoon Gallery"
+  - key: VITE_BASE_PATH
+    value: "/"

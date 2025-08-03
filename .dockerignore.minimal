@@ -1,0 +1,15 @@
+public/Pictures-Optimized/
+node_modules/
+.git/
+README.md
+*.md
+*.txt
+*.ps1
+*.cjs
+*.js
+!vite.config.js
+!src/
+!public/video-debug.html
+deploy-*
+Dockerfile
+docker-app-spec.yaml
