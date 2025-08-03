@@ -495,6 +495,12 @@ export const mediaData = {
         "type": "image",
         "caption": "Artifact Images_L&N_Sneak Peeks_271",
         "description": ""
+      },
+      {
+        "filename": "29acff97-3421-46e9-bf2e-e6571d7be476.mp4",
+        "type": "video",
+        "caption": "Wedding ceremony video",
+        "description": "Special wedding ceremony moment"
       }
     ]
   },
@@ -508,7 +514,7 @@ export const mediaData = {
       {
         "name": "1_To Hotel",
         "title": "To Hotel",
-        "description": "To Hoel activities and experiences",
+        "description": "Travel to accommodation in Tokyo, Japan's capital city and largest metropolitan area",
         "media": [
           {
             "filename": "20250722_112125.jpg",
@@ -533,7 +539,7 @@ export const mediaData = {
       {
         "name": "2_Hotel Edmund Tokyo",
         "title": "Hotel Edmund Tokyo",
-        "description": "Hotel Edmunt Tokyo activities and experiences",
+        "description": "Hotel Edmund Tokyo, a business hotel in Sumida Ward offering convenient access to Tokyo's attractions",
         "media": [
           {
             "filename": "20250724_052924.jpg",
@@ -598,7 +604,7 @@ export const mediaData = {
       {
         "name": "1_Koishikawa Korakuen Garden",
         "title": "Koishikawa Korakuen Garden",
-        "description": "Koishikawa Korakuen Garden activities and experiences",
+        "description": "Koishikawa Korakuen Garden, one of Tokyo's oldest gardens dating from 1629, designated as a Special Place of Scenic Beauty",
         "media": [
           {
             "filename": "20250724_090202.jpg",
@@ -785,7 +791,7 @@ export const mediaData = {
       {
         "name": "2_Imperial Garden East",
         "title": "Imperial Garden East",
-        "description": "Imperial Garder East activities and experiences",
+        "description": "Imperial Palace East Gardens, the former site of Edo Castle built in 1457, now public gardens in Tokyo's Chiyoda district",
         "media": [
           {
             "filename": "20250724_105724.jpg",
@@ -1122,7 +1128,7 @@ export const mediaData = {
       {
         "name": "3_Sumida Aquarium",
         "title": "Sumida Aquarium",
-        "description": "Sumida Aquarium activities and experiences",
+        "description": "Sumida Aquarium, located on floors 5-6 of Tokyo Skytree Town, featuring 260 species and Japan's largest indoor open water tank",
         "media": [
           {
             "filename": "20250724_144026.jpg",
@@ -1411,7 +1417,7 @@ export const mediaData = {
       {
         "name": "4_Tokyo Skytree",
         "title": "Tokyo Skytree",
-        "description": "Tokyo Skytree activities and experiences",
+        "description": "Tokyo Skytree, completed in 2012 as the world's second tallest structure at 634 meters, broadcasting tower and observation deck",
         "media": [
           {
             "filename": "20250724_164405.mp4",
@@ -1584,7 +1590,7 @@ export const mediaData = {
       {
         "name": "1_Rickshaw Ride",
         "title": "Rickshaw Ride",
-        "description": "Rickshaw Ride activities and experiences",
+        "description": "Traditional rickshaw transportation, a human-powered two-wheeled cart introduced to Japan in 1868 during the Meiji period",
         "media": [
           {
             "filename": "20250725_095332.mp4",
@@ -1771,7 +1777,7 @@ export const mediaData = {
       {
         "name": "2_Senso Ji Temple",
         "title": "Senso Ji Temple",
-        "description": "Senso Ji Temply activities and experiences",
+        "description": "Senso-ji Temple, Tokyo's oldest Buddhist temple founded in 645 AD, located in Asakusa district with famous Thunder Gate",
         "media": [
           {
             "filename": "20250725_110832.jpg",
@@ -1934,7 +1940,7 @@ export const mediaData = {
       {
         "name": "3_Maid Dreamin Cafe",
         "title": "Maid Dreamin Cafe",
-        "description": "Maid Dreamin Cafe activities and experiences",
+        "description": "Maid Dreamin' Cafe, a themed cafe in Akihabara where waitresses dress as maids, part of Tokyo's otaku culture",
         "media": [
           {
             "filename": "20250725_125913.jpg",
@@ -2043,7 +2049,7 @@ export const mediaData = {
       {
         "name": "4_Asakusa Sumo Club",
         "title": "Asakusa Sumo Club",
-        "description": "Asakusa Sumo Club activities and experiences",
+        "description": "Asakusa Sumo Club, traditional sumo wrestling experience in historic Asakusa district, near the original sumo stadium location",
         "media": [
           {
             "filename": "20250725_194727.jpg",
@@ -2056,7 +2062,7 @@ export const mediaData = {
       {
         "name": "_Travel",
         "title": "ravel",
-        "description": "ravel activities and experiences",
+        "description": "Travel between Tokyo locations using the world's most extensive urban rail network system",
         "media": [
           {
             "filename": "20250725_081339.jpg",
@@ -2182,7 +2188,7 @@ export const mediaData = {
       {
         "name": "1_Meiji Shrine",
         "title": "Meiji Shrine",
-        "description": "Meiji Srhine activities and experiences",
+        "description": "Meiji Shrine, dedicated to Emperor Meiji and Empress Shoken, built in 1920 and surrounded by 175-acre forest in Shibuya",
         "media": [
           {
             "filename": "20250726_084510.jpg",
@@ -2423,7 +2429,7 @@ export const mediaData = {
       {
         "name": "2_Kabuki Theater",
         "title": "Kabuki Theater",
-        "description": "Kabuki Theater activities and experiences",
+        "description": "Kabuki Theater, traditional Japanese drama form developed in 1603, featuring elaborate makeup, costumes, and stylized performances",
         "media": [
           {
             "filename": "20250726_103151.jpg",
@@ -2454,7 +2460,7 @@ export const mediaData = {
       {
         "name": "3_Sumo",
         "title": "Sumo",
-        "description": "Sumo activities and experiences",
+        "description": "Sumo wrestling, Japan's national sport with 1,500-year history, featuring wrestlers competing in a circular ring (dohyo)",
         "media": [
           {
             "filename": "20250726_150041.jpg",
@@ -2557,7 +2563,7 @@ export const mediaData = {
       {
         "name": "4_Fireworks",
         "title": "Fireworks",
-        "description": "Fireworks activities and experiences",
+        "description": "Japanese fireworks (hanabi) displays, a summer tradition dating to the 18th century with intricate pyrotechnic artistry",
         "media": [
           {
             "filename": "20250726_191135.mp4",
@@ -2617,7 +2623,7 @@ export const mediaData = {
       {
         "name": "1_Team Lab Planets",
         "title": "Team Lab Planets",
-        "description": "Team Lab Planets activities and experiences",
+        "description": "teamLab Planets, an immersive digital art museum in Toyosu featuring interactive water-based installations and floating artworks",
         "media": [
           {
             "filename": "20250727_090731.jpg",
@@ -2714,7 +2720,7 @@ export const mediaData = {
       {
         "name": "2_Kareoke",
         "title": "Kareoke",
-        "description": "Kareoke activities and experiences",
+        "description": "Karaoke, originated in Japan in the 1970s, now a major part of Japanese entertainment culture with thousands of venues nationwide",
         "media": [
           {
             "filename": "20250727_130722.mp4",
@@ -2727,7 +2733,7 @@ export const mediaData = {
       {
         "name": "3_Dance",
         "title": "Dance",
-        "description": "Dance activities and experiences",
+        "description": "Traditional Japanese dance performances, including folk dances and contemporary fusion styles in Tokyo entertainment venues",
         "media": [
           {
             "filename": "20250727_161227.jpg",
@@ -2786,7 +2792,7 @@ export const mediaData = {
       {
         "name": "1_Disney Sea",
         "title": "Disney Sea",
-        "description": "Disney Sea activities and experiences",
+        "description": "Tokyo DisneySea, opened in 2001 as the fourth Disney theme park worldwide, featuring unique nautical and exploration themes",
         "media": [
           {
             "filename": "20250728_100643.mp4",
@@ -2991,7 +2997,7 @@ export const mediaData = {
       {
         "name": "2_Yakinikuya KAZU Kagurazaka",
         "title": "Yakinikuya KAZU Kagurazaka",
-        "description": "Yakinikuya KAZU Kagurazaka activities and experiences",
+        "description": "Yakinikuya KAZU in Kagurazaka, traditional Japanese BBQ restaurant specializing in premium wagyu beef in historic geisha district",
         "media": [
           {
             "filename": "20250728_185807.jpg",
@@ -3092,7 +3098,7 @@ export const mediaData = {
       {
         "name": "1_Nezu Shrine",
         "title": "Nezu Shrine",
-        "description": "Nezu Shrine activities and experiences",
+        "description": "Nezu Shrine, founded in 1705 by fifth Tokugawa shogun, famous for azalea gardens and one of Tokyo's oldest unchanged shrines",
         "media": [
           {
             "filename": "20250729_084407.jpg",
@@ -3213,7 +3219,7 @@ export const mediaData = {
       {
         "name": "2_Shibuya & Shinjuku",
         "title": "Shibuya & Shinjuku",
-        "description": "Shibuya & Shinjuku activities and experiences",
+        "description": "Shibuya and Shinjuku, major commercial and administrative centers featuring the famous Shibuya Crossing and Shinjuku Station hub",
         "media": [
           {
             "filename": "20250729_102736.jpg",
@@ -3262,7 +3268,7 @@ export const mediaData = {
       {
         "name": "3_Gora Kadan",
         "title": "Gora Kadan",
-        "description": "Gora Kadan activities and experiences",
+        "description": "Gora Kadan, luxury traditional Japanese ryokan in Hakone founded in 1952, featuring natural hot springs and kaiseki cuisine",
         "media": [
           {
             "filename": "20250729_135134.mp4",
@@ -3448,7 +3454,7 @@ export const mediaData = {
       {
         "name": "1_Hakone Shrine",
         "title": "Hakone Shrine",
-        "description": "Hakone Shrine activities and experiences",
+        "description": "Hakone Shrine, founded in 757 AD on Lake Ashi's shores, famous for its vermillion torii gate standing in the lake water",
         "media": [
           {
             "filename": "20250730_100738.jpg",
@@ -3665,7 +3671,7 @@ export const mediaData = {
       {
         "name": "3_Carved Buddha",
         "title": "Carved Buddha",
-        "description": "Carved Budda activities and experiences",
+        "description": "Carved Buddha statues dating to approximately 400 AD, representing early Japanese Buddhist artistry and spiritual devotion",
         "media": [
           {
             "filename": "20250730_121142.mp4",
@@ -3756,7 +3762,7 @@ export const mediaData = {
       {
         "name": "4_Open Air Museum",
         "title": "Open Air Museum",
-        "description": "Open Air Museum activities and experiences",
+        "description": "Hakone Open-Air Museum, Japan's first outdoor sculpture museum opened in 1969, featuring works by Picasso, Rodin, and Moore",
         "media": [
           {
             "filename": "20250730_132733.jpg",
@@ -3913,7 +3919,7 @@ export const mediaData = {
       {
         "name": "5_Glass Museum",
         "title": "Glass Museum",
-        "description": "Glass Musuem activities and experiences",
+        "description": "Hakone Glass Forest Museum, featuring Venetian glass artworks and crystal installations in a European-style garden setting",
         "media": [
           {
             "filename": "20250730_153905.jpg",
@@ -4195,7 +4201,7 @@ export const mediaData = {
       {
         "name": "1_Black Egg Monument",
         "title": "Black Egg Monument",
-        "description": "Black Egg Monument activities and experiences",
+        "description": "Hakone Black Eggs (kuro-tamago), eggs boiled in volcanic hot springs that turn black and are said to extend life by seven years",
         "media": [
           {
             "filename": "20250731_095151.mp4",
@@ -4454,7 +4460,7 @@ export const mediaData = {
       {
         "name": "2_Pirate Ship",
         "title": "Pirate Ship",
-        "description": "Pirate Ship activities and experiences",
+        "description": "Hakone Pirate Ship cruise on Lake Ashi, tourist boats designed as 17th-18th century European sailing ships operating since 1964",
         "media": [
           {
             "filename": "20250731_115920.jpg",
@@ -4521,7 +4527,7 @@ export const mediaData = {
       {
         "name": "3_Hakone",
         "title": "Hakone",
-        "description": "Hakone activities and experiences",
+        "description": "Hakone region, famous resort town in Kanagawa Prefecture known for hot springs, views of Mount Fuji, and volcanic Lake Ashi",
         "media": [
           {
             "filename": "20250731_124920.jpg",
@@ -4601,7 +4607,7 @@ export const mediaData = {
       {
         "name": "5_Fireworks",
         "title": "Fireworks",
-        "description": "Fireworks activities and experiences",
+        "description": "Fireworks display viewed from the parking lot of Gora Kadan ryokan, traditional Japanese hanabi celebration",
         "media": [
           {
             "filename": "20250731_213608.jpg",
@@ -4775,7 +4781,7 @@ export const mediaData = {
       {
         "name": "1_Odawara Castle",
         "title": "Odawara Castle",
-        "description": "Odwara Castle activities and experiences",
+        "description": "Odawara Castle, reconstructed fortress originally built in 1417, served as seat of the powerful Hojo clan during Japan's Sengoku period",
         "media": [
           {
             "filename": "20250801_111940.jpg",
