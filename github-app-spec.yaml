@@ -13,7 +13,7 @@ static_sites:
   - key: VITE_USE_CDN
     value: "true"
   - key: VITE_CDN_BASE_URL
-    value: "https://wedding-honeymoon-media.nyc3.cdn.digitaloceanspaces.com"
+    value: "https://laura-nathan-wedding-photos.nyc3.digitaloceanspaces.com"
   - key: VITE_APP_TITLE
     value: "Wedding & Honeymoon Gallery"
   - key: VITE_BASE_PATH

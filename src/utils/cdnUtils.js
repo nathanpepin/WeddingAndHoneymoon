@@ -7,7 +7,7 @@ const CDN_CONFIG = {
   USE_CDN: import.meta.env.VITE_USE_CDN === 'true' || import.meta.env.PROD,
   
   // DigitalOcean Spaces CDN URL from environment
-  CDN_BASE_URL: import.meta.env.VITE_CDN_BASE_URL || 'https://wedding-honeymoon-media.nyc3.cdn.digitaloceanspaces.com',
+  CDN_BASE_URL: import.meta.env.VITE_CDN_BASE_URL || 'https://laura-nathan-wedding-photos.nyc3.digitaloceanspaces.com',
   
   // Local development path
   LOCAL_BASE_URL: '/Pictures-Optimized'
