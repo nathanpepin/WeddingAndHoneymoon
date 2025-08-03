@@ -1,0 +1,21 @@
+name: wedding-honeymoon-gallery
+region: nyc3
+
+static_sites:
+- name: web
+  github:
+    repo: nathanpepin/WeddingAndHoneymoon
+    branch: master
+    deploy_on_push: true
+  build_command: npm run build
+  output_dir: dist
+  environment_slug: node-js
+  envs:
+  - key: VITE_USE_CDN
+    value: "true"
+  - key: VITE_CDN_BASE_URL
+    value: "https://laura-nathan-wedding-photos.nyc3.digitaloceanspaces.com"
+  - key: VITE_APP_TITLE
+    value: "Wedding & Honeymoon Gallery"
+  - key: VITE_BASE_PATH
+    value: "/"
