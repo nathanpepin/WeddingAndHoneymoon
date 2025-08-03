@@ -501,6 +501,12 @@ export const mediaData = {
         "type": "video",
         "caption": "Wedding ceremony video",
         "description": "Special wedding ceremony moment"
+      },
+      {
+        "filename": "527459351_24342114875453977_6241438321363954171_n.mp4",
+        "type": "video",
+        "caption": "Wedding celebration video",
+        "description": "Wedding celebration moment"
       }
     ]
   },
