@@ -15,16 +15,19 @@ const CDN_CONFIG = {
 
 /**
  * Get the full URL for a media file
- * @param {string} folder - The folder name (e.g., "2025-07-18_Bachelor Party")
+ * @param {string} folder - The folder name (e.g., "2025-07-18_Bachelor Party" or "2025-08-01_Odawara Castle_Travel Back/1_Odawara Castle")
  * @param {string} filename - The filename (e.g., "image.jpg")
  * @returns {string} Full URL to the media file
  */
 export function getMediaUrl(folder, filename) {
   const baseUrl = CDN_CONFIG.USE_CDN ? CDN_CONFIG.CDN_BASE_URL : CDN_CONFIG.LOCAL_BASE_URL;
-  const encodedFolder = encodeURIComponent(folder);
+  
+  // Split folder path and encode each component separately to preserve forward slashes
+  const folderParts = folder.split('/').map(part => encodeURIComponent(part));
+  const encodedFolderPath = folderParts.join('/');
   const encodedFilename = encodeURIComponent(filename);
   
-  return `${baseUrl}/Pictures-Optimized/${encodedFolder}/${encodedFilename}`;
+  return `${baseUrl}/Pictures-Optimized/${encodedFolderPath}/${encodedFilename}`;
 }
 
 /**
