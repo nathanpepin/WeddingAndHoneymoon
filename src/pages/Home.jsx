@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Calendar, Heart, MapPin, Camera } from 'lucide-react';
+import { Calendar, Heart, MapPin } from 'lucide-react';
 import './Home.css';
 
 const Home = () => {
@@ -15,10 +15,6 @@ const Home = () => {
             <Link to="/timeline" className="btn">
               <Calendar size={20} />
               View Our Timeline
-            </Link>
-            <Link to="/edit" className="btn btn-secondary">
-              <Camera size={20} />
-              Edit Captions
             </Link>
           </div>
         </div>

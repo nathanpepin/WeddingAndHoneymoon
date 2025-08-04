@@ -43,8 +43,7 @@ src/
 │   ├── Home.jsx        # Landing page
 │   ├── Timeline.jsx    # Timeline view of all days
 │   ├── DayView.jsx     # Detailed view of a single day
-│   ├── ActivityView.jsx # Activity-specific view
-│   └── EditCaptions.jsx # Caption editing interface
+│   └── ActivityView.jsx # Activity-specific view
 ├── data/
 │   └── mediaData.js    # Data structure for all media and descriptions
 ├── utils/

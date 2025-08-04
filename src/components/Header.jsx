@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Heart, Calendar, Edit3, Home, Menu, X, MapPin } from 'lucide-react';
+import { Heart, Calendar, Home, Menu, X, MapPin } from 'lucide-react';
 import './Header.css';
 
 const Header = ({ 
@@ -48,10 +48,6 @@ const Header = ({
             <Link to="/timeline" className={isActive('/timeline')}>
               <Calendar size={18} />
               <span>Timeline</span>
-            </Link>
-            <Link to="/edit" className={isActive('/edit')}>
-              <Edit3 size={18} />
-              <span>Edit</span>
             </Link>
           </nav>
           

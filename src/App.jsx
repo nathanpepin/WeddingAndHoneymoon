@@ -7,7 +7,6 @@ import Home from './pages/Home';
 import Timeline from './pages/Timeline';
 import DayView from './pages/DayView';
 import ActivityView from './pages/ActivityView';
-import EditCaptions from './pages/EditCaptions';
 import './App.css';
 
 const AppContent = () => {
@@ -78,7 +77,6 @@ const AppContent = () => {
           <Route path="/timeline" element={<Timeline />} />
           <Route path="/day/:dayId" element={<DayView />} />
           <Route path="/activity/:dayId/:activityId" element={<ActivityView />} />
-          <Route path="/edit" element={<EditCaptions />} />
         </Routes>
       </main>
     </div>
