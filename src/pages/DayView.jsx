@@ -49,7 +49,7 @@ const DayView = () => {
               ...item,
               path: getSubfolderMediaPath(subfolder, item.filename),
               context: 'subfolder',
-              contextTitle: subfolder.title
+              contextTitle: subfolder.name
             });
           });
         }
