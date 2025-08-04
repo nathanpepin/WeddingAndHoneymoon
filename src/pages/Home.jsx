@@ -41,10 +41,10 @@ const Home = () => {
             
             <div className="feature-card card">
               <div className="feature-icon">
-                <Camera size={48} />
+                <Heart size={48} />
               </div>
               <h3>Interactive Stories</h3>
-              <p>Each photo tells a story. Add captions and descriptions to preserve the memories forever.</p>
+              <p>Each photo tells a story with beautiful captions and descriptions to preserve the memories forever.</p>
             </div>
           </div>
         </div>
