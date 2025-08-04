@@ -19,7 +19,7 @@ export const mediaData = {
   "2025-07-19_Rehearsal_Bachelorette Party": {
     "date": "2025-07-19",
     "title": "Rehearsal & Bachelorette Party",
-    "description": "An amazing day of our honeymoon adventure!",
+    "description": "Pre-wedding rehearsal and bachelorette party celebrations before our big day!",
     "location": "Tokyo, Japan",
     "mapPlaceholder": "Map showing rehearsal & bachelorette party locations and activities",
     "subfolders": [],
@@ -2067,7 +2067,7 @@ export const mediaData = {
       },
       {
         "name": "_Travel",
-        "title": "ravel",
+        "title": "Travel",
         "description": "Travel between Tokyo locations using the world's most extensive urban rail network system",
         "media": [
           {
@@ -2149,7 +2149,7 @@ export const mediaData = {
   },
   "2025-07-26_Meiji_Kabuki_Sumo_Fireworks": {
     "date": "2025-07-26",
-    "title": "Meiji & Kabuki & Sumo & Fireworks",
+    "title": "Meiji & Kabuki & Asakusa Sumo Club & Fireworks Festival",
     "description": "A perfect day experiencing the harmony between Tokyo's spiritual heritage and contemporary entertainment!",
     "location": "Tokyo, Japan",
     "mapPlaceholder": "Map showing meiji & kabuki & sumo & fireworks locations and activities",
@@ -2465,7 +2465,7 @@ export const mediaData = {
       },
       {
         "name": "3_Sumo",
-        "title": "Sumo",
+        "title": "Asakusa Sumo Club",
         "description": "Sumo wrestling, Japan's national sport with 1,500-year history, featuring wrestlers competing in a circular ring (dohyo)",
         "media": [
           {
@@ -2568,7 +2568,7 @@ export const mediaData = {
       },
       {
         "name": "4_Fireworks",
-        "title": "Fireworks",
+        "title": "Fireworks Festival",
         "description": "Japanese fireworks (hanabi) displays, a summer tradition dating to the 18th century with intricate pyrotechnic artistry",
         "media": [
           {
@@ -2590,7 +2590,7 @@ export const mediaData = {
   },
   "2025-07-27_Team Lab_Karaoke_Dance": {
     "date": "2025-07-27",
-    "title": "Team Lab & Karaoke & Dance",
+    "title": "Team Lab & Karaoke & Asakusa Dance Cabaret",
     "description": "Experiencing Tokyo's modern entertainment scene with digital art, karaoke, and dancing!",
     "location": "Tokyo, Japan",
     "mapPlaceholder": "Map showing team lab & kareoke & dance locations and activities",
@@ -2738,7 +2738,7 @@ export const mediaData = {
       },
       {
         "name": "3_Dance",
-        "title": "Dance",
+        "title": "Asakusa Dance Cabaret",
         "description": "Traditional Japanese dance performances, including folk dances and contemporary fusion styles in Tokyo entertainment venues",
         "media": [
           {
